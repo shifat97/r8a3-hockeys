@@ -43,6 +43,7 @@
               24: "1.5rem",
               18: "1.125rem",
               16: "1rem",
+              14: "0.875rem",
             },
             fontWeight: {
               800: 800,
@@ -76,55 +77,147 @@
       };
     </script>
   </head>
-  <body class="font-manrope bg-gradient p-img-1">
+  <body class="font-manrope">
     <!-- HEADER -->
     <header>
       <div
         class="xl:container mx-auto flex justify-between items-center px-20 py-15"
       >
         <!-- Menu Button -->
-        <div tabindex="0" role="button" class="btn btn-ghost">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 lg:hidden"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h8m-8 6h16"
-            />
-          </svg>
-
-          <h1 class="text-24 lg:text-36 font-800 ml-4 lg:ml-0">
-            Hockey<span class="text-red">'</span>s
-          </h1>
-        </div>
-        <ul
-          class="hidden lg:flex lg:items-center lg:justify-center lg:gap-[44px] lg:block text-lightgrey"
-        >
-          <li>Home</li>
-          <li>About</li>
-          <li>Pages</li>
-          <li>Blog</li>
-          <li>Contact</li>
-        </ul>
-        <div class="flex items-center">
-          <i class="fa-solid fa-magnifying-glass hidden lg:block lg:mr-[24px]"></i>
-          <button
-            class="bg-red text-white rounded-xl py-[8px] px-[17px] font-700 text-18 lg:px-[24px] lg:py-[15px] lg:text-20"
-          >
-            Get Ticket
-          </button>
+        <div class="navbar bg-base-100 p-0">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden p-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-400 text-lightgrey"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="text-24 lg:text-36 font-800 pl-3 lg:p-0"
+              >Hockey<span class="text-red">’</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 text-base font-400 text-lightgrey"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <i
+              class="fa-solid fa-magnifying-glass hidden lg:block lg:mr-[24px]"
+            ></i>
+            <a class="btn bg-red text-white px-[17px] py-[8px] font-700 text-18 lg:text-20">Get Ticket</a>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="xl:container mx-auto"></div>
+      <div class="xl:container mx-auto px-20">
+        <!-- Banner -->
+        <div class="mt-[24px] lg:mt-[50px] relative">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img
+                class="w-full bg-banner-image bg-center bg-no-repeat bg-cover rounded-xl h-[400px] lg:h-[550px]"
+              />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a
+                  href="#slide4"
+                  class="btn btn-circle bg-black text-white border-0"
+                  >❮</a
+                >
+                <a
+                  href="#slide2"
+                  class="btn btn-circle bg-black text-white border-0"
+                  >❯</a
+                >
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                class="w-full bg-banner-image bg-center bg-no-repeat bg-cover rounded-xl h-[400px] lg:h-[550px]"
+              />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a
+                  href="#slide1"
+                  class="btn btn-circle bg-black text-white border-0"
+                  >❮</a
+                >
+                <a
+                  href="#slide3"
+                  class="btn btn-circle bg-black text-white border-0"
+                  >❯</a
+                >
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                class="w-full bg-banner-image bg-center bg-no-repeat bg-cover rounded-xl h-[400px] lg:h-[550px]"
+              />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a
+                  href="#slide2"
+                  class="btn btn-circle bg-black text-white border-0"
+                  >❮</a
+                >
+                <a
+                  href="#slide1"
+                  class="btn btn-circle bg-black text-white border-0"
+                  >❯</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-black text-white p-4 rounded-xl mt-4 absolute w-full lg:right-4 lg:bottom-4 lg:w-1/2"
+          >
+            <h3 class="text-18 font-800">Meet all the heroes from the field</h3>
+            <p class="text-lightergrey text-14 mt-[8px] leading-6">
+              Typically, a banner refers to a prominent visual element placed at
+              the top of a webpage, often used for branding, navigation, or to
+              highlight important information.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
