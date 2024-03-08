@@ -67,12 +67,68 @@
               lightergrey: "rgba(255, 255, 255, 0.60)",
               darkgrey: "rgba(19, 19, 24, 0.60)",
             },
+            padding: {
+              15: "15px",
+              20: "20px",
+            },
           },
         },
       };
     </script>
   </head>
   <body class="font-manrope bg-gradient p-img-1">
-    
+    <!-- HEADER -->
+    <header>
+      <div
+        class="xl:container mx-auto flex justify-between items-center px-20 py-15"
+      >
+        <!-- Menu Button -->
+        <div tabindex="0" role="button" class="btn btn-ghost">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 lg:hidden"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+
+          <h1 class="text-24 lg:text-36 font-800 ml-4 lg:ml-0">
+            Hockey<span class="text-red">'</span>s
+          </h1>
+        </div>
+        <ul
+          class="hidden lg:flex lg:items-center lg:justify-center lg:gap-[44px] lg:block text-lightgrey"
+        >
+          <li>Home</li>
+          <li>About</li>
+          <li>Pages</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+        <div class="flex items-center">
+          <i class="fa-solid fa-magnifying-glass hidden lg:block lg:mr-[24px]"></i>
+          <button
+            class="bg-red text-white rounded-xl py-[8px] px-[17px] font-700 text-18 lg:px-[24px] lg:py-[15px] lg:text-20"
+          >
+            Get Ticket
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="xl:container mx-auto"></div>
+    </main>
+
+    <footer>
+      <div class="xl:container mx-auto"></div>
+    </footer>
   </body>
 </html>
