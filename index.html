@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +14,65 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+            backgroundImage: {
+              "banner-image": "url(./Images/1.png)",
+              "p-lg-1":
+                "linear-gradient(rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url(./Images/2.png)", // Define your custom linear gradient
+              "p-lg-2":
+                "linear-gradient(rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url(./Images/3.png)",
+              "p-lg-3":
+                "linear-gradient(rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url(./Images/4.png)", /// Define the URL path to your image
+            },
+            fontSize: {
+              36: "2.25rem",
+              28: "1.75rem",
+              20: "1.25rem",
+              24: "1.5rem",
+              18: "1.125rem",
+              16: "1rem",
+            },
+            fontWeight: {
+              800: 800,
+              700: 700,
+              600: 600,
+              500: 500,
+              400: 400,
+              300: 300,
+            },
+            colors: {
+              while: "#FFF",
+              black: "#131318",
+              red: "#FF4240",
+              green: "#49D293",
+              lightgreen: "rgba(188, 237, 109, 0.10)",
+              blue: "#4C8DF1",
+              lightblue: "rgba(98, 156, 243, 0.10)",
+              yellow: "#E7E7E8",
+              lightyellow: "rgba(253, 221, 95, 0.10)",
+              grey: "rgba(19, 19, 24, 0.03)",
+              lightgrey: "#424247",
+              lightergrey: "rgba(255, 255, 255, 0.60)",
+              darkgrey: "rgba(19, 19, 24, 0.60)",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+  <body class="font-manrope bg-gradient p-img-1">
+    
+  </body>
 </html>
